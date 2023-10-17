@@ -1,0 +1,78 @@
+/* Estilos para el componente ShowSurvey */
+
+/* Contenedor principal del componente */
+.App {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Barra de herramientas */
+  .grid {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+  }
+  
+  /* Botón "Nueva" */
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  /* Tabla */
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Fila de datos */
+  tr {
+    &:nth-child(odd) {
+      background-color: #f5f5f5;
+    }
+  }
+  
+  /* Botones de edición y eliminación */
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  /* Modificación de iconos */
+  .fa-solid {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  
+  /* Mensaje cuando no hay datos */
+  tr > td[colSpan="6"] {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    font-size: 16px;
+  }
+  

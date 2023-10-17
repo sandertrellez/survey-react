@@ -1,0 +1,97 @@
+.registro-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    &-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+      &-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .registro-modal__modal-form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-bottom: 10px;
+
+          .registro-modal__modal-form-row {
+            width: calc(50% - 10px); // Para que haya espacio entre las columnas
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+            label {
+              margin-bottom: 5px;
+              font-size: 16px;
+              font-weight: bold;
+            }
+
+            select {
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-bottom: 10px;
+            }
+
+            input {
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        .registro-modal__modal-register-button {
+          background-color: #007BFF;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
